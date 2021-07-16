@@ -12,7 +12,7 @@ export async function checkMinSupportedVersion(
         .get(`min-app-version`)
         .expect(200)
 
-    console.log(response)
+    //console.log(response)
 
 
 }
