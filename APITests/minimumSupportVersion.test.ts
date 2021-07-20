@@ -1,11 +1,7 @@
-import {checkMinSupportedVersion} from "./APIs/checkMinSupportedVersion";
+import {checkMinSupportedVersionAPIReturns200} from "./APIs/checkMinSupportedVersionAPIReturns200";
 
-describe ('Test minimum app versions', ()=> {
-    const currentAndroidVersion = "1.4.0"
-
-    test ('current android version is greater than minimum version', async() => {
-        console.log('Checking android version')
-
-        await checkMinSupportedVersion()
+describe ('Smoke test APIs', ()=> {
+    test ('Check API is up and running', async() => {
+        await checkMinSupportedVersionAPIReturns200()
     })
 })
